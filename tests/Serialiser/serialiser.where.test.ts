@@ -1,5 +1,6 @@
 import { Serialiser } from "@/Query/serialiser";
 import { Query } from "@/Query/query";
+import { describe, it, expect } from "vitest";
 
 describe("where", () => {
   it("serialies empty wheres", () => {

@@ -1,4 +1,5 @@
 import { Serialiser } from "@/Query/serialiser";
+import { describe, it, expect } from "vitest";
 
 describe("where", () => {
   it("casts true", () => {

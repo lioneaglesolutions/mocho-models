@@ -3,13 +3,24 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/mocho-models.umd.cjs",
+  "module": "./dist/mocho-models.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mocho-models.js",
+      "require": "./dist/mocho-models.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "devDependencies": {
     "typescript": "^4.6.4",
-    "vite": "^3.1.0"
+    "vite": "^3.1.0",
+    "vitest": "^0.23.2"
   }
 }

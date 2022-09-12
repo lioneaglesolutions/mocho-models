@@ -1,4 +1,5 @@
 import { Query } from "@/Query/query";
+import { describe, it, expect } from "vitest";
 
 describe("append", () => {
   it("sets an append from string", () => {
