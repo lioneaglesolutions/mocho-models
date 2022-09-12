@@ -1,5 +1,6 @@
 import path from "path";
 import { defineConfig } from "vite";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
   resolve: {
@@ -15,4 +16,5 @@ export default defineConfig({
       fileName: "mocho-models",
     },
   },
+  plugins: [dts()],
 });

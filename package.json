@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/mocho-models.umd.cjs",
   "module": "./dist/mocho-models.js",
   "exports": {
@@ -21,6 +23,7 @@
   "devDependencies": {
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.5.0",
     "vitest": "^0.23.2"
   }
 }
